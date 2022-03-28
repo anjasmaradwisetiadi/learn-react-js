@@ -1,0 +1,4 @@
+--- Ctt_React_Js
+### react hooks
+a. react hooks hampir sama dengan mixins di vue gunanya untuk menambahkan logic tertentu dimana hal itu bisa digunakan di tempat lain
+b. ataupun menambahkan sebuah function tertentu yang mana kita butuh behaviour lifecyle , maka kita bisa membuat function react hooks 
