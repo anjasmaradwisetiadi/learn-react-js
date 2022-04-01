@@ -1,8 +1,9 @@
 --- Ctt_React_Js
-### react hooks
+### React Hooks
 a. react hooks hampir sama dengan mixins di vue gunanya untuk menambahkan logic tertentu dimana hal itu bisa digunakan di tempat lain
 b. ataupun menambahkan sebuah function tertentu yang mana kita butuh behaviour lifecyle , maka kita bisa membuat function react hooks 
 c. reducer/useReducer ...?
-### react redux
+### React Redux
 1. react redux adalah sebuah store di react
 2. untuk menggunakannya store redux perlu dibunggkus(wrap) dengan "<Provider></Provider>" di component yang diiinginkan
+3. connect...
