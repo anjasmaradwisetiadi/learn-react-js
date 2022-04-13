@@ -7,3 +7,7 @@ c. reducer/useReducer ...?
 1. react redux adalah sebuah store di react
 2. untuk menggunakannya store redux perlu dibunggkus(wrap) dengan "<Provider></Provider>" di component yang diiinginkan
 3. connect...
+### React Form
+1. untuk parsing value input ada 2 cara dengan cara state ataupun ref.
+2. state digunakan untuk hanya mengubah value yang berkaitan dengan state saja , tidak mengubah domnya
+3. sedangkan ref mengubah sampai domnya, dan lebih disarankan menggunakan state.
