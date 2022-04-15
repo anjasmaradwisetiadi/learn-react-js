@@ -3,6 +3,9 @@
 a. react hooks hampir sama dengan mixins di vue gunanya untuk menambahkan logic tertentu dimana hal itu bisa digunakan di tempat lain
 b. ataupun menambahkan sebuah function tertentu yang mana kita butuh behaviour lifecyle , maka kita bisa membuat function react hooks 
 c. reducer/useReducer ...?
+### React Basic
+1. saat menggunakan state adakalanya kita perlu multiple state, kalau untuk traditionalnya kita deklarasikan satu2. 
+2. untuk point-1 kita bisa menggunakan objeck di dalam state.jadi cukup buat satu state lalu kita bisa masukan nilai disetiap ojecknya. untuk menggunakan tehnik ini perlu menggunakan spread operator, karena objeck harus bisa update antar satu nilai objeck dengan nilai objeck lainya. untuk contohnya bisa lihat di folder "React-Basic-V2" di command"***example point-1"       
 ### React Redux
 1. react redux adalah sebuah store di react
 2. untuk menggunakannya store redux perlu dibunggkus(wrap) dengan "<Provider></Provider>" di component yang diiinginkan
