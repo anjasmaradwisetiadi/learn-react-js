@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Card from '../UI/Card';
 import Button from '../UI/Button';
 import ErrorModal from '../UI/ErrorModal';
+import  Wrapper from "../Helpers/Wrapper";
 import classes from './AddUser.module.css';
 
 const AddUser = (props) => {
@@ -43,36 +44,38 @@ const AddUser = (props) => {
     setError(null);
   };
 
-  return (
-    <div>
-      {error && (
-        <ErrorModal
-          title={error.title}
-          message={error.message}
-          onConfirm={errorHandler}
-        />
-      )}
-      <Card className={classes.input}>
-        <form onSubmit={addUserHandler}>
-          <label htmlFor="username">Username</label>
-          <input
-            id="username"
-            type="text"
-            value={enteredUsername}
-            onChange={usernameChangeHandler}
-          />
-          <label htmlFor="age">Age (Years)</label>
-          <input
-            id="age"
-            type="number"
-            value={enteredAge}
-            onChange={ageChangeHandler}
-          />
-          <Button type="submit">Add User</Button>
-        </form>
-      </Card>
-    </div>
-  );
+  return(
+      <Wrapper>
+        {error && (
+            <ErrorModal
+                key="error-model"
+                title={error.title}
+                message={error.message}
+                onConfirm={errorHandler}
+            />
+        )
+        },
+        <Card key="add-user-card" className={classes.input}>
+          <form onSubmit={addUserHandler}>
+            <label htmlFor="username">Username</label>
+            <input
+                id="username"
+                type="text"
+                value={enteredUsername}
+                onChange={usernameChangeHandler}
+            />
+            <label htmlFor="age">Age (Years)</label>
+            <input
+                id="age"
+                type="number"
+                value={enteredAge}
+                onChange={ageChangeHandler}
+            />
+            <Button type="submit">Add User</Button>
+          </form>
+        </Card>
+      </Wrapper>
+  )
 };
 
 export default AddUser;

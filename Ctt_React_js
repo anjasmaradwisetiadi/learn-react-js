@@ -3,13 +3,29 @@
 a. react hooks hampir sama dengan mixins di vue gunanya untuk menambahkan logic tertentu dimana hal itu bisa digunakan di tempat lain
 b. ataupun menambahkan sebuah function tertentu yang mana kita butuh behaviour lifecyle , maka kita bisa membuat function react hooks 
 c. reducer/useReducer ...?
+
 ### React Basic
 1. saat menggunakan state adakalanya kita perlu multiple state, kalau untuk traditionalnya kita deklarasikan satu2. 
-2. untuk point-1 kita bisa menggunakan objeck di dalam state.jadi cukup buat satu state lalu kita bisa masukan nilai disetiap ojecknya. untuk menggunakan tehnik ini perlu menggunakan spread operator, karena objeck harus bisa update antar satu nilai objeck dengan nilai objeck lainya. untuk contohnya bisa lihat di folder "React-Basic-V2" di command"***example point-1"       
+2. untuk point-1 kita bisa menggunakan objeck di dalam state.jadi cukup buat satu state lalu kita bisa masukan nilai disetiap ojecknya. untuk menggunakan tehnik ini perlu menggunakan spread operator, karena objeck harus bisa update antar satu nilai objeck dengan nilai objeck lainya. untuk contohnya bisa lihat di folder "React-Basic-V2" di command"***example point-1"
+3. didalam reactjs ada yang disebut dengan konsep lifting up, artinya mendapatkan value diatara component sebut saja Component A dan Component B mereka tidak saling berhubungan (child to parent2 atau sebaliknya). maka perlu dikirim sampai root component baru dikirim ke tempat tujuan
+4. Portals
+
+### React Fragment & Portal 
+1. konsep rendering html component react js sama dengan vue.js jadi perlu warapper html root. adakalanya akan menimbulkan masalah ketika di styling terlalu banyak div mengakibatkan styling rusak .
+2. untuk mengatasi point-1 tadi maka kita bisa membuat warpper sendiri dengan cara seperti contoh bisa lihat di folder "React-Fragment-Portal" di command"***example point-1"
+3. atau ada cara untuk mengatasi point-1 cara lain bawaaan React dengan cara menggunakan "<React.Fragment></React.Fragment>"
+4. adayang disebut dengan portal, jadi singkatnya adalah portal di react itu mengambil layouting component lain lalu memasukannya/membungkusnya dimanapun si pembungkus berada. lalu ditampilkan yang mana dibutuhkan        
+
+### React SideEffect & Reducers
+1. Side Effect fungsinya sendiri adalah untuk perihal Render UI dan React to User Input secara garis besar
+2. lalu penerapannya adalah seperti evalute dan render JSX, manage State & Props, React to Events & Input re-Evalute Component upon state & Prop Change
+3. untuk penggunaan sideEffect ada 2 macam tanpa cleanup dan menggunakan cleanup , untuk lebih detailnya bisa lihat lagi dan cari....
+4. di lecture Section "10" lecture "114. Using the useEffect Cleanup Function" menggunakan debounce konsep dimana membrikan semacam interval agar tidak overkill perform. 
 ### React Redux
 1. react redux adalah sebuah store di react
 2. untuk menggunakannya store redux perlu dibunggkus(wrap) dengan "<Provider></Provider>" di component yang diiinginkan
 3. connect...
+
 ### React Form
 1. untuk parsing value input ada 2 cara dengan cara state ataupun ref.
 2. state digunakan untuk hanya mengubah value yang berkaitan dengan state saja , tidak mengubah domnya
