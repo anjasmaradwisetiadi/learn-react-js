@@ -23,7 +23,6 @@ c. reducer/useReducer ...?
 4. di lecture Section "10" lecture "114. Using the useEffect Cleanup Function" menggunakan debounce konsep dimana memberikan semacam interval agar tidak overkill perform. 
 5. di react ada juga yang disebut dengan useReducer. jadi function seperti useState hanya saja untuk sesuatu yang lebih complex seperti HTTP Request.
 6. untuk penjelasaanya bisa dilihat di file gambar "useReducer-01.png"
-7. kesimpulannya reducer semacam method dimana kita tidak perlu menggunakan useState sehingga reducer bisa 
 
 ### React Redux
 1. react redux adalah sebuah store di react
